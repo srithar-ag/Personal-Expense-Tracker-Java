@@ -1,0 +1,6 @@
+# Java build output
+*.class
+
+# IDE and local files
+.vscode/
+.idea/

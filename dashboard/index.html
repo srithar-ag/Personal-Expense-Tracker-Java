@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ExpenseFlow | Personal finance dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar"><div class="brand"><span class="brand-mark">↗</span><span>Expense<span>Flow</span></span></div>
+    <div class="workspace">PERSONAL WORKSPACE <span>⌄</span></div>
+    <nav><button class="nav-item active" data-view="dashboard"><b>◈</b> Overview</button><button class="nav-item" data-view="transactions"><b>≡</b> Transactions <i id="nav-count">38</i></button><button class="nav-item" data-view="services"><b>◉</b> Websites & Services</button><button class="nav-item" data-view="budgets"><b>▥</b> Budgets</button><button class="nav-item" data-view="subscriptions"><b>◌</b> Subscriptions</button><button class="nav-item" data-view="analytics"><b>⌁</b> Analytics</button><button class="nav-item" data-view="reports"><b>▤</b> Reports</button><button class="nav-item" data-view="import"><b>⇧</b> Import data</button><button class="nav-item" data-view="integrations"><b>⌘</b> Integrations</button></nav>
+    <div class="sidebar-bottom"><button class="nav-item" data-view="settings"><b>⚙</b> Settings</button><div class="tip"><strong>Stay on top of it</strong><span>You've saved ₹3,240 this month.</span><div class="tip-line"><span></span></div></div><div class="profile"><div class="avatar">PS</div><div><strong>Praveen S.</strong><small>Personal account</small></div><span>•••</span></div></div>
+  </aside>
+  <main class="main"><header class="topbar"><button class="menu-button" id="menu">☰</button><div class="search"><span>⌕</span><input id="global-search" placeholder="Search transactions, services..." /></div><div class="top-actions"><button class="icon-button" id="notifications" aria-label="Notifications">♧<em></em></button><button class="icon-button" aria-label="Settings">⚙</button><div class="top-avatar">PS</div></div></header><div id="app"></div></main>
+</div>
+<div class="toast" id="toast"></div><div class="modal-backdrop" id="modal"><div class="modal"><button class="modal-close" id="modal-close">×</button><div id="modal-content"></div></div></div>
+<script src="app.js"></script>
+</body>
+</html>
