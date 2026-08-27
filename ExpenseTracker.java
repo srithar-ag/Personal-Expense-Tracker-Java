@@ -95,6 +95,10 @@ public class ExpenseTracker {
                     break;
 
                 case 4:
+                    ExpenseReport.showCategoryReport();
+                    break;
+
+                case 5:
                     System.out.println("Thank you for using Expense Tracker!");
                     scanner.close();
                     return;
