@@ -73,7 +73,8 @@ public class ExpenseTracker {
             System.out.println("1. Add Expense");
             System.out.println("2. View Expenses");
             System.out.println("3. Calculate Total");
-            System.out.println("4. Exit");
+            System.out.println("4. Category Report");
+            System.out.println("5. Exit");
 
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
